@@ -46,8 +46,18 @@ service.  If you don't already have a GitHub account, please create one.  If
 you are new to GitHub, there is a short git tutorial under the lectures folder:
 [Using_Git.pdf](/lectures/Using_Git.pdf).
 
-Please create a new private GitHub repository under your GitHub account and copy over all the files under this folder (the files can be obtained by cloning the entire course repository).  Commit and push to create an initial version.  When you are ready to submit, make sure you push all changes and submit your private repository using the GradeScope GitHub submission feature.
- 
+In order to create your first GitHub repository, you need to join the
+CS1632-Fall2026 GitHub organization for this class.  All of you got an email
+invitation to your pitt.edu email address to join this organization.  Please
+accept the invitation.  Once you accept, you are ready to accept your first
+assignment and create the repository by clicking on this link:
+
+https://classroom50.org/CS1632-Fall2026/cs-1632-fall-2026/assignments/exercise-0-java-assessment-exercise/accept
+
+Once you click, you will be provided with a link to your new repository.  You
+can start working on the exercise from there.  You will eventually submit this
+repository to GradeScope when you are done.
+
 ## Install Apache Maven
 
 In this class, we will be using the Apache Maven build framework to build and
