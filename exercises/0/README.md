@@ -1,6 +1,6 @@
 - [Java Assessment Exercise](#java-assessment-exercise)
   * [Description](#description)
-  * [Clone the GitHub Repository](#clone-the-github-repository)
+  * [Create new GitHub Repository](#create-new-github-repository)
   * [Install Apache Maven](#install-apache-maven)
   * [Install VSCode](#install-vscode)
   * [Install JDK 11](#install-jdk-11)
@@ -12,7 +12,6 @@
   * [Test the Code](#test-the-code)
   * [Submission](#submission)
   * [GradeScope Feedback](#gradescope-feedback)
-  * [Resources](#resources)
 
 # Java Assessment Exercise
 
