@@ -2,9 +2,11 @@ package edu.pitt.cs;
 
 //TODO: Import libraries as needed
 import java.util.NoSuchElementException;
+import java.util.PriorityQueue;
 
 public class SortedCollection {
 	// TODO: Add member variables or methods as needed
+	private PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
 
 	/**
 	 * Adds the number n to the collection.
@@ -14,6 +16,7 @@ public class SortedCollection {
 	 */
 	public boolean add(int n) {
 		// TODO: Implement
+		pq.add(n);
 		return true;
 	}
 
@@ -25,7 +28,8 @@ public class SortedCollection {
 	 */
 	public int remove() throws NoSuchElementException {
 		// TODO: Implement
-		return 0;
+		if(pq.isEmpty()) throw new NoSuchElementException();
+		return pq.poll();
 	}
 
 	/**
@@ -50,6 +54,17 @@ public class SortedCollection {
 		
 		// TODO: add numbers in commandline arguments to collection using the add(int) method.
 		// If any commandline argument is not a number, call showUsage() and return.
+
+		for(String arg : args) {
+
+			try {
+				int val = Integer.valueOf(arg);
+				collection.add(val);
+			} catch(Exception e) {
+				showUsage();
+				return;
+			}
+		}
 		
 		System.out.print("sorted: ");
 		for (int i = 0; i < args.length; i++) {
