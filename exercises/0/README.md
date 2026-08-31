@@ -15,7 +15,7 @@
 
 # Java Assessment Exercise
 
-DUE: August 31 (Monday), 2026 Before Class
+DUE: September 1 (Tuesday), 2026 Before Class
 
 ## Description
 
