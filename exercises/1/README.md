@@ -25,9 +25,9 @@ Fall Semester 2026 - Exercise 1
 
 * DUE: September 9 (Wednesday), 2026 before start of class
 
-**Classroom50 Link:** https://classroom50.org/CS1632-Fall2026/cs-1632-fall-2026/assignments/exercise-1-test-plans/accept
+**Classroom50 Link:** Published in the Exercise 1 channel on Teams.
 
-Please click on the above link to accept this exercise and create your repository.
+Please use the link to accept this exercise and create your repository.
 
 # Description
 
