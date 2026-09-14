@@ -74,7 +74,7 @@ no ``:tests:`` is an orphan and a specification nobody links to is uncovered.
    - The system asks the user to try again with a shorter name.
    - The system shuts down.
 
-.. test:: System rejects an invalid cat weight
+.. test:: System terminates on a non-integer cat weight
    :id: TEST_004
    :tests: SPEC_002
 
@@ -94,8 +94,8 @@ no ``:tests:`` is an orphan and a specification nobody links to is uncovered.
 
    **Postconditions**:
 
-   - The system asks the user to try again with a valid weight.
-   - The system shuts down.
+   - The system terminates.
+   - The system displays a Java InputMismatchException stack trace.
 
 .. test:: System determines an overweight cat
    :id: TEST_005
