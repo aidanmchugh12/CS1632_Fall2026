@@ -107,3 +107,39 @@ no ``:tests:`` is an orphan and a specification nobody links to is uncovered.
    **Postconditions**:
 
    - The system prints "35 is old enough to be POTUS".
+
+.. test:: System accepts the explicit eligibility boundary age
+   :id: TEST_EXPLICIT_BOUNDARY
+   :tests: SPEC_001, SPEC_005
+
+   **Preconditions**:
+
+   - The potus.jar file is installed in the system.
+   - Java 11 is installed on the machine.
+
+   **Execution Steps**:
+
+   1. Open a shell and cd to the folder where potus.jar is located.
+   2. Run: "java -jar potus.jar 35"
+
+   **Postconditions**:
+
+   - The system prints "35 is old enough to be POTUS".
+
+.. test:: System rejects the age immediately below the eligibility boundary
+   :id: TEST_IMPLICIT_BOUNDARY
+   :tests: SPEC_001, SPEC_006
+
+   **Preconditions**:
+
+   - The potus.jar file is installed in the system.
+   - Java 11 is installed on the machine.
+
+   **Execution Steps**:
+
+   1. Open a shell and cd to the folder where potus.jar is located.
+   2. Run: "java -jar potus.jar 34"
+
+   **Postconditions**:
+
+   - The system prints "34 is too young to be POTUS".
