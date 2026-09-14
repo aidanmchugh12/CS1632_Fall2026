@@ -74,6 +74,29 @@ no ``:tests:`` is an orphan and a specification nobody links to is uncovered.
    - The system asks the user to try again with a shorter name.
    - The system shuts down.
 
+.. test:: System accepts punctuation in a cat name
+   :id: TEST_006
+   :tests: SPEC_001, SPEC_007
+
+   **Preconditions**:
+
+   - The catscale.jar file is installed in the current folder.
+   - Java 11 is installed on the machine.
+
+   **Execution Steps**:
+
+   1. Open a shell and cd to the folder where catscale.jar is located.
+   2. Run: "java -jar catscale.jar"
+   3. System prompts for the name of the cat
+   4. Input: "Aidan!"
+   5. System prompts for the weight of the cat
+   6. Input: "10"
+
+   **Postconditions**:
+
+   - The system prints "Aidan! is normal weight."
+   - The system shuts down.
+
 .. test:: System rejects an invalid cat weight
    :id: TEST_004
    :tests: SPEC_002

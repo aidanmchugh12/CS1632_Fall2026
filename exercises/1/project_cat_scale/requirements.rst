@@ -24,7 +24,7 @@ testers.
    :id: REQ_002
    :requiredby: PROJ_001
 
-   If cat name is invalid, the system shall ask the user to try again with a shorter name and shut down.  Otherwise, the system shall proceed to the next step.
+   If cat name is longer than 10 characters, the system shall ask the user to try again with a shorter name and shut down. Otherwise, the system shall proceed to the next step.
 
 .. req:: Cat weight prompt
    :id: REQ_003
@@ -48,7 +48,7 @@ testers.
    :id: SPEC_001
    :specifies: REQ_002, REQ_003, REQ_001
 
-   If provided name consists of lower-case or upper-case alphabets of length less or equal to 10, the system shall ask the user the weight of the cat and wait for input.
+   If provided name is no longer than 10 characters, including names containing punctuation, the system shall ask the user the weight of the cat and wait for input.
 
 .. spec:: Invalid cat weight
    :id: SPEC_002
@@ -60,7 +60,7 @@ testers.
    :id: SPEC_006
    :specifies: REQ_002
 
-   If the provided name contains a character other than a lower-case or upper-case alphabet, or is longer than 10 characters, the system shall ask the user to try again with a shorter name and shut down.
+   If the provided name is longer than 10 characters, the system shall ask the user to try again with a shorter name and shut down.
 
 .. spec:: Valid cat weight
    :id: SPEC_007
