@@ -46,39 +46,45 @@ testers.
 
 .. spec:: Valid cat name entered into prompt
    :id: SPEC_001
-   :specifies: REQ_002, REQ_003
+   :specifies: REQ_002, REQ_003, REQ_001
 
    If provided name consists of lower-case or upper-case alphabets of length less or equal to 10, the system shall ask the user the weight of the cat and wait for input.
 
-.. spec:: Invalid cat name
-   :id: SPEC_002
-   :specifies: REQ_001
-
-   If provided name does not consist of lower-case or upper-case alphabets of length less or equal to 10, the system shall ask the user to try again with a shorter name and shut down.
-
 .. spec:: Invalid cat weight
-   :id: SPEC_003
+   :id: SPEC_002
    :specifies: REQ_004
 
    If the provided weight is not an integer, the system shall ask the user to try again with a valid weight and shut down.
 
+.. spec:: Invalid cat name
+   :id: SPEC_006
+   :specifies: REQ_002
+
+   If the provided name contains a character other than a lower-case or upper-case alphabet, or is longer than 10 characters, the system shall ask the user to try again with a shorter name and shut down.
+
+.. spec:: Valid cat weight
+   :id: SPEC_007
+   :specifies: REQ_004
+
+   If the provided weight is an integer, the system shall determine and display the cat's weight verdict.
+
 .. spec:: Cat is underweight
+   :id: SPEC_003
+   :specifies: REQ_005
+
+   If the cat's weight is 4 or less, the system shall print "[NAME] is underweight." and shut down.
+
+.. spec:: Cat is normal weight
    :id: SPEC_004
    :specifies: REQ_005
 
-   If the cat's weight is 4 or less, the system will print "[NAME] is underweight" and shut down.
+   If the cat's weight is between 5 and 25 inclusive, the system shall print "[NAME] is normal weight." and shut down.
 
-.. spec:: Cat is normal weight
+.. spec:: Cat is overweight
    :id: SPEC_005
    :specifies: REQ_005
 
-   If the cat's weight is between 5 and 25 inclusive, the system will print "[NAME] is normal weight" and shut down.
-
-.. spec:: Cat is overweight
-   :id: SPEC_006
-   :specifies: REQ_005
-
-   If the cat's weight is 26 or above, the system will print "[NAME] is overweight" and shut down.
+   If the cat's weight is 26 or above, the system shall print "[NAME] is overweight." and shut down.
 
 
    
