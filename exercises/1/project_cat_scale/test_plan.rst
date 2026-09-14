@@ -117,8 +117,8 @@ no ``:tests:`` is an orphan and a specification nobody links to is uncovered.
 
    **Postconditions**:
 
-   - The system asks the user to try again with a valid weight.
-   - The system shuts down.
+   - The system terminates.
+   - The system displays a Java InputMismatchException stack trace.
 
 .. test:: System determines an overweight cat
    :id: TEST_005

@@ -36,7 +36,7 @@ testers.
    :id: REQ_004
    :requiredby: PROJ_001
 
-   If cat weight is invalid, the system shall ask the user to try again with a valid weight and shut down..  Otherwise, the system shall proceed to the next step.
+   If cat weight is not an integer, the system shall terminate and display a Java InputMismatchException stack trace. Otherwise, the system shall proceed to the next step.
 
 .. req:: Display verdict
    :id: REQ_005
@@ -54,7 +54,7 @@ testers.
    :id: SPEC_002
    :specifies: REQ_004
 
-   If the provided weight is not an integer, the system shall ask the user to try again with a valid weight and shut down.
+   If the provided weight is not an integer, the system shall terminate and display a Java InputMismatchException stack trace.
 
 .. spec:: Invalid cat name
    :id: SPEC_006
