@@ -53,7 +53,7 @@ no ``:tests:`` is an orphan and a specification nobody links to is uncovered.
    - The system prints "Alexandria is underweight."
    - The system shuts down.
 
-.. test:: System rejects an invalid cat name
+.. test:: System reports an overlength cat name
    :id: TEST_003
    :tests: SPEC_006
 
@@ -67,11 +67,11 @@ no ``:tests:`` is an orphan and a specification nobody links to is uncovered.
    1. Open a shell and cd to the folder where catscale.jar is located.
    2. Run: "java -jar catscale.jar"
    3. System prompts for the name of the cat
-   4. Input: "Aidan123"
+   4. Input: "Alexandriaa"
 
    **Postconditions**:
 
-   - The system asks the user to try again with a shorter name.
+   - The system prints "Your cat's name is too long. Rename your cat and try again."
    - The system shuts down.
 
 .. test:: System accepts punctuation in a cat name

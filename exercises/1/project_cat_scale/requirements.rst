@@ -60,7 +60,7 @@ testers.
    :id: SPEC_006
    :specifies: REQ_002
 
-   If the provided name is longer than 10 characters, the system shall ask the user to try again with a shorter name and shut down.
+   If the provided name is longer than 10 characters, the system shall print "Your cat's name is too long. Rename your cat and try again." and shut down.
 
 .. spec:: Valid cat weight
    :id: SPEC_007
